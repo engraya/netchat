@@ -10,7 +10,7 @@ export const Message = ({ content, isUserMessage }: MessageProps) => {
   return (
     <div
       className={cn({
-        "bg-zinc-800": isUserMessage,
+        "bg-zinc-500": isUserMessage,
         "bg-zinc-900/25": !isUserMessage,
       })}
     >
@@ -33,7 +33,6 @@ export const Message = ({ content, isUserMessage }: MessageProps) => {
                 {isUserMessage ? "You" : "Website"}
               </span>
             </div>
-
             <p className="text-sm font-normal py-2.5 text-gray-900 dark:text-white">{content}</p>
           </div>
         </div>
