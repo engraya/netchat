@@ -2,11 +2,12 @@ import React from 'react'
 import Image from 'next/image'
 function About() {
   return (
-    <div className="sm:flex items-center max-w-screen-xl">
-    <div className="sm:w-1/2 p-10">
+    <div className="gap-2">
+ <div className="sm:flex items-center max-w-screen-xl">
+    <div className="sm:w-1/2">
       <div className="image object-center text-center">
-        {/* <Image src="https://i.imgur.com/WbQnbas.png" alt="about image" height={200} width={200}/> */}
-        <img src="https://i.imgur.com/WbQnbas.png" alt="about image" />
+        <Image src="https://i.imgur.com/WbQnbas.png" alt="about image" className="h-[400px] w-[400px]" height={100} width={100}/>
+        {/* <img src="https://i.imgur.com/WbQnbas.png" alt="about image" /> */}
       </div>
     </div>
     <div className="sm:w-1/2 p-5">
@@ -20,6 +21,8 @@ function About() {
       </div>
     </div>
   </div>
+    </div>
+   
   
   )
 }
