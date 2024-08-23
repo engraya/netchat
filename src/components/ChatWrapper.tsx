@@ -22,6 +22,7 @@ export const ChatWrapper = ({
       <div className="flex-1 text-black justify-between flex flex-col">
         <Messages messages={messages} />
       </div>
+
       <ChatInput
         input={input}
         handleInputChange={handleInputChange}
